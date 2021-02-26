@@ -1,6 +1,6 @@
 auth.onAuthStateChanged(user => {
     if(user){
-    window.location.href="user/home.html";
+    window.location.href="users/home.html";
     }
     else{
     
