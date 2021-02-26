@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book & Go</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- ***************🔥🔥🔥🔥🔥FIREBASE🔥🔥🔥🔥🔥****************** -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>  
+
+    <!-- *************** DATA TABLES ****************** -->	
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+    
+    <!-- *************** Font Awesome ****************** -->	
+    <script src="https://kit.fontawesome.com/452a5215eb.js" crossorigin="anonymous"></script>
+
+    <!-- *************** SIDEBAR ****************** -->	   
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/cards.css" rel="stylesheet">
+    <link href="../css/default.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+  <!-- ***************SIDEBAR****************** -->	
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-dark border-right text-light" id="sidebar-wrapper">
+      <div class="sidebar-heading">Contributor - Book n Go </div>
+      <div class="list-group list-group-flush">
+        <a href="dashboard.html" class="list-group-item list-group-item-action bg-dark text-light">Dashboard</a>
+        <a href="books.html" class="list-group-item list-group-item-action bg-dark text-light">Books</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+  <!-- ***************NAVIGATION BAR****************** -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom text-light">
+        <button class="btn btn-secondary" id="menu-toggle"><i class="fas fa-align-justify"></i></button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+<!--                <a class="dropdown-item" href="personal-info.html">Personal Info</a>
+                <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" id="logout">Log-out</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  <!-- ***************NAVIGATION END****************** -->
+
+
+  <!-- ***************CONTENT****************** -->
+      <div class="container-fluid">
+        <h1 class="mt-4 text-dark">Dashboard</h1>
+        <hr>
+
+      <!-- details card section starts from here -->
+      <section class="details-card">
+        <div class="container">
+            <div class="row">
+              
+            </div>
+        </div>
+      </section>
+      <!-- details card section starts from here -->  
+
+
+
+
+
+
+      </div>
+
+
+
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- ***************SIDE BAR TOGGLE****************** -->
+  <script type="text/javascript" src="../js/sidebar.js"></script>
+  <!-- ***************🔥🔥🔥🔥🔥FIREBASE🔥🔥🔥🔥🔥****************** -->
+  <script type="text/javascript" src="../js/app.js"></script>  
+  <script type="text/javascript" src="../js/data_table.js"></script>
+  <script type="text/javascript" src="controls/dashboard.js"></script>
+  <script type="text/javascript" src="controls/session.js"></script>
+
+</body>
+</html>
+
+
+
+    
